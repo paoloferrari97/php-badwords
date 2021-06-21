@@ -14,7 +14,9 @@
 </head>
 <body>
 
-<?php echo $paragrafo; ?>
+<h3>Paragrafo: <?php echo $paragrafo; ?></h3>
+
+<h3>Lunghezza: <?php echo strlen($paragrafo); ?></h3>
 
 </body>
 </html>
