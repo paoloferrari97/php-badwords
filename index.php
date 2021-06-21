@@ -2,6 +2,9 @@
 
     $paragrafo = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid asperiores eos doloribus nisi optio reiciendis cum iste illo suscipit animi?";
 
+    var_dump($_GET);
+    $parola = $_GET("word");
+    
 ?>
 
 <!DOCTYPE html>
@@ -17,6 +20,8 @@
 <h3>Paragrafo: <?php echo $paragrafo; ?></h3>
 
 <h3>Lunghezza: <?php echo strlen($paragrafo); ?></h3>
+
+<h3>Paragrafo censurato: <?php echo $parola; ?></h3>
 
 </body>
 </html>
