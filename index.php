@@ -1,9 +1,9 @@
 <?php
 
     $paragrafo = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid asperiores eos doloribus nisi optio reiciendis cum iste illo suscipit animi?";
-
-    var_dump($_GET);
-    $parola = $_GET("word");
+    
+    /* var_dump($_GET); */
+    $parola = $_GET["word"];
     
 ?>
 
