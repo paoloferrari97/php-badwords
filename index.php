@@ -1,9 +1,11 @@
 <?php
 
-    $paragrafo = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid asperiores eos doloribus nisi optio reiciendis cum iste illo suscipit animi?";
+    $paragrafo = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid asperiores eos doloribus nisi optio reiciendis cum iste illo suscipit animi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid asperiores eos doloribus nisi optio reiciendis cum iste illo suscipit animi?";
     
     /* var_dump($_GET); */
     $parola = $_GET["word"];
+
+    $paragrafo_censurato = str_replace($parola, "***", $paragrafo);
     
 ?>
 
@@ -21,7 +23,9 @@
 
 <h3>Lunghezza: <?php echo strlen($paragrafo); ?></h3>
 
-<h3>Paragrafo censurato: <?php echo $parola; ?></h3>
+<h3>Paragrafo censurato: <?php echo $paragrafo_censurato; ?></h3>
+
+<h3>Lunghezza censurata: <?php echo strlen($paragrafo_censurato); ?></>
 
 </body>
 </html>
